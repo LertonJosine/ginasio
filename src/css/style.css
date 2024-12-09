@@ -19,9 +19,34 @@
     width: fit-content;
 }
 
+.btn-color-white{
+    background-color: white;
+}
+.btn-color-pink{
+    background-color: var(--rosa);
+    
+}.btn-color-yellow{
+    background-color: var(--amarelo);
+}
+
+.btn-color-white:hover{
+    background-color: var(--cinza-fraco);
+}
+
+.btn-color-pink:hover{
+    background-color: var(--rosa-2);
+}
+
+.btn-color-yellow:hover{
+    background-color: var(--amarelo-2);
+}
 a {
     color: black;
     text-decoration: none;
+}
+
+.btn-color-pink > a{
+    color: white;
 }
 /*
  ----------------header------------------
@@ -29,7 +54,7 @@ a {
 header{
     display: flex;
     justify-content: space-between;
-    padding: 3% 5%;
+    padding: 2% 5%;
     align-items: center;
 }
 
@@ -73,14 +98,42 @@ header > h1{
     text-align: justify;
 }
 
-#about > div[class="squared-btn"]{
-    background-color: var(--rosa);
-}
-
-#about > div[class="squared-btn"] > a{
-    color: white;
-}
 
 #about > div[class="squared-btn"]:hover{
     background-color: var(--rosa-2);
+}
+
+
+/* basic gymnasium information */
+
+#basic-gym-info {
+    background-color: var(--cinza-fraco);
+}
+#basic-gym-info > img{
+    width: 100%;
+}
+
+#basic-gym-info li{
+    width: 300px;
+    padding: 30px 20px;
+
+}
+
+#basic-gym-info li > *{
+    margin-bottom: 30px;
+}
+
+#basic-gym-info p{
+    font-size: 1.5em;
+}
+#our-mission{
+    background-color: var(--amarelo);
+}
+
+#training{
+    background-color: var(--rosa);
+}
+
+#membership{
+    background-color: white;
 }
