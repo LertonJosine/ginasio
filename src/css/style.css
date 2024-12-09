@@ -26,6 +26,24 @@ a {
 
 }
 
+.btn-color-gray{
+    background-color: var(--cinza-fraco);
+
+}
+
+.btn-color-pink{
+    background-color: var(--rosa);
+    color: white;
+}
+
+.btn-color-yellow{
+    background-color: var(--amarelo);
+}
+
+.btn-color-pink > a{
+    color: white;
+}
+
 /*
 ---------------header---------------
 */
@@ -77,10 +95,47 @@ nav a:hover {
 
 }
 
-#about>div[class="squared-btn"] {
-    background-color: var(--rosa);
+
+
+
+/* basic-gym-info */
+
+#basic-gym-info{
+    background-color: var(--cinza-fraco);
 }
 
-#about>div[class="squared-btn"]>a {
+#basic-gym-info > img{
+    width: 100%;
+    
+}
+#basic-gym-info > ul > li{
+    max-width: 300px;
+    padding: 60px 40px;
+
+}
+
+#basic-gym-info p{
+    font-size: 1.2em;
+}
+
+#basic-gym-info h1{
+    text-transform: capitalize;
+}
+
+#basic-gym-info  li > *{
+    margin-bottom: 20px;
+}
+#our-mission{
+    background-color: var(--amarelo);
+
+}
+
+#training{
+    background-color: var(--rosa);
     color: white;
+}
+
+#membership{
+    background-color: white;
+    font-weight: bold;
 }
