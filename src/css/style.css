@@ -113,9 +113,19 @@ header > h1{
     width: 100%;
 }
 
+#basic-gym-info > ul{
+    position: relative;
+    top: -150px;
+    margin-left: 5%;
+    width: fit-content;
+}
+
 #basic-gym-info li{
-    width: 300px;
+    max-width: 300px;
     padding: 30px 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -137,3 +147,4 @@ header > h1{
 #membership{
     background-color: white;
 }
+
