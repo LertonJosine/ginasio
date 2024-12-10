@@ -26,9 +26,8 @@ a {
 
 }
 
-.btn-color-gray{
-    background-color: var(--cinza-fraco);
-
+.btn-color-white{
+    background-color: white;
 }
 
 .btn-color-pink{
@@ -44,6 +43,18 @@ a {
     color: white;
 }
 
+.btn-color-pink:hover{
+    background-color: var(--rosa-2);
+}
+
+.btn-color-white:hover{
+    background-color: var(--cinza-fraco);
+}
+
+.btn-color-yellow:hover{
+    background-color: var(--amarelo-2);
+}
+
 /*
 ---------------header---------------
 */
@@ -51,7 +62,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 3% 5%;
+    padding: 2% 5%;
     align-items: center;
 }
 
@@ -108,14 +119,29 @@ nav a:hover {
     width: 100%;
     
 }
+
+#basic-gym-info > ul{
+    position: relative;
+    top: -150px;
+    left: 5%;
+    width: fit-content;
+}
+
+
 #basic-gym-info > ul > li{
     max-width: 300px;
-    padding: 60px 40px;
+    min-width: 250px;
+    padding: 45px 25px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
 
 }
 
+
+
 #basic-gym-info p{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 #basic-gym-info h1{
@@ -123,7 +149,7 @@ nav a:hover {
 }
 
 #basic-gym-info  li > *{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 #our-mission{
     background-color: var(--amarelo);
