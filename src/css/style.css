@@ -12,75 +12,139 @@
 * {
     margin: 0px;
     padding: 0px;
-
 }
 
+.squared-btn{
+    padding: 15px 40px;
+    width: fit-content;
+}
+
+.btn-color-white{
+    background-color: white;
+}
+.btn-color-pink{
+    background-color: var(--rosa);
+    
+}.btn-color-yellow{
+    background-color: var(--amarelo);
+}
+
+.btn-color-white:hover{
+    background-color: var(--cinza-fraco);
+}
+
+.btn-color-pink:hover{
+    background-color: var(--rosa-2);
+}
+
+.btn-color-yellow:hover{
+    background-color: var(--amarelo-2);
+}
 a {
     color: black;
     text-decoration: none;
 }
 
-.squared-btn {
-    padding: 15px 40px;
-    width: fit-content;
-
+.btn-color-pink > a{
+    color: white;
 }
-
 /*
----------------header---------------
+ ----------------header------------------
 */
-
-header {
+header{
     display: flex;
     justify-content: space-between;
-    padding: 3% 5%;
+    padding: 2% 5%;
     align-items: center;
 }
 
-header>h1 {
-    color: var(--cinza-fraco);
-}
-
-nav li {
-    display: inline;
-    margin: 10px;
-
+nav > ul > li{
+    display: inline-block;
+    margin: 0px 15px;
 }
 
 
-nav a:hover {
+
+nav a:hover{
     color: var(--rosa);
+}
+
+header > h1{
+    color: var(--cinza-fraco);
 }
 
 /* fim header */
 
+
 /* about */
 
-#about {
-    background-color: var(--amarelo);
+#about{
     padding: 5%;
+    background-color: var(--amarelo);
 
 }
 
-#about > * {
+#about > *{
     margin: 16px 0px;
 }
 
-#about>h1 {
+#about > h1{
     font-size: 3em;
     font-weight: lighter;
 }
 
-#about>p {
+#about > p{
     max-width: 700px;
     text-align: justify;
+}
+
+
+#about > div[class="squared-btn"]:hover{
+    background-color: var(--rosa-2);
+}
+
+
+/* basic gymnasium information */
+
+#basic-gym-info {
+    background-color: var(--cinza-fraco);
+}
+#basic-gym-info > img{
+    width: 100%;
+}
+
+#basic-gym-info > ul{
+    position: relative;
+    top: -150px;
+    margin-left: 5%;
+    width: fit-content;
+}
+
+#basic-gym-info li{
+    max-width: 300px;
+    padding: 30px 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
 
 }
 
-#about>div[class="squared-btn"] {
+#basic-gym-info li > *{
+    margin-bottom: 30px;
+}
+
+#basic-gym-info p{
+    font-size: 1.5em;
+}
+#our-mission{
+    background-color: var(--amarelo);
+}
+
+#training{
     background-color: var(--rosa);
 }
 
-#about>div[class="squared-btn"]>a {
-    color: white;
+#membership{
+    background-color: white;
 }
+
