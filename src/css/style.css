@@ -45,11 +45,43 @@ a {
     text-decoration: none;
 }
 
+.squared-btn {
+    padding: 15px 40px;
+    width: fit-content;
+
+}
+
+.btn-color-white{
+    background-color: white;
+}
+
+.btn-color-pink{
+    background-color: var(--rosa);
+    color: white;
+}
+
+.btn-color-yellow{
+    background-color: var(--amarelo);
+}
+
 .btn-color-pink > a{
     color: white;
 }
+
+.btn-color-pink:hover{
+    background-color: var(--rosa-2);
+}
+
+.btn-color-white:hover{
+    background-color: var(--cinza-fraco);
+}
+
+.btn-color-yellow:hover{
+    background-color: var(--amarelo-2);
+}
+
 /*
- ----------------header------------------
+---------------header---------------
 */
 header{
     display: flex;
@@ -99,52 +131,125 @@ header > h1{
 }
 
 
-#about > div[class="squared-btn"]:hover{
-    background-color: var(--rosa-2);
-}
 
 
-/* basic gymnasium information */
 
-#basic-gym-info {
+/* basic-gym-info */
+
+#basic-gym-info{
     background-color: var(--cinza-fraco);
 }
+
 #basic-gym-info > img{
     width: 100%;
+    
 }
 
 #basic-gym-info > ul{
     position: relative;
     top: -150px;
-    margin-left: 5%;
+    left: 5%;
     width: fit-content;
 }
 
-#basic-gym-info li{
+
+#basic-gym-info > ul > li{
     max-width: 300px;
-    padding: 30px 20px;
+    min-width: 250px;
+    padding: 45px 25px;
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
 
 }
 
-#basic-gym-info li > *{
-    margin-bottom: 30px;
-}
+
 
 #basic-gym-info p{
     font-size: 1.5em;
 }
+
+#basic-gym-info h1{
+    text-transform: capitalize;
+}
+
+#basic-gym-info  li > *{
+    margin-bottom: 30px;
+}
 #our-mission{
     background-color: var(--amarelo);
+
 }
 
 #training{
     background-color: var(--rosa);
+    color: white;
 }
 
 #membership{
     background-color: white;
+    font-weight: bold;
 }
 
+/* just-train */
+
+#just-train{
+    background-color: var(--cinza-fraco);
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+#just-train > div{
+    margin-bottom: 20px;
+}
+#just-train > div > h1{
+    font-size: 3em;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+
+#just-train > div > p{
+    font-size: large;
+    max-width: 400px;
+}
+
+#just-train > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    width: fit-content;
+    gap: 10px;
+
+}
+
+#just-train li{
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+/* luxry-sport-club */
+
+#luxury-sport-club{
+    background-color: var(--rosa);
+    padding: 5%;
+    color: white;
+}
+
+#luxury-sport-club > *{
+    margin-bottom: 20px;
+}
+
+#luxury-sport-club > p{
+    max-width: 700px;
+    text-align: justify;
+}
+
+#luxury-sport-club > div[class^="squared-btn"]{
+    border-radius: 200px;
+}
+
+#luxury-sport-club a{
+    font-weight: bold;
+}
