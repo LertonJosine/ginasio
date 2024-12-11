@@ -165,3 +165,66 @@ nav a:hover {
     background-color: white;
     font-weight: bold;
 }
+
+/* just-train */
+
+#just-train{
+    background-color: var(--cinza-fraco);
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+#just-train > div{
+    margin-bottom: 20px;
+}
+#just-train > div > h1{
+    font-size: 3em;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+
+#just-train > div > p{
+    font-size: large;
+    max-width: 400px;
+}
+
+#just-train > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    width: fit-content;
+    gap: 10px;
+
+}
+
+#just-train li{
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+/* luxry-sport-club */
+
+#luxury-sport-club{
+    background-color: var(--rosa);
+    padding: 5%;
+    color: white;
+}
+
+#luxury-sport-club > *{
+    margin-bottom: 20px;
+}
+
+#luxury-sport-club > p{
+    max-width: 700px;
+    text-align: justify;
+}
+
+#luxury-sport-club > div[class^="squared-btn"]{
+    border-radius: 200px;
+}
+
+#luxury-sport-club a{
+    font-weight: bold;
+}
