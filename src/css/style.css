@@ -79,7 +79,9 @@ a {
 .btn-color-yellow:hover{
     background-color: var(--amarelo-2);
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*
 ---------------header---------------
 */
@@ -88,6 +90,10 @@ header{
     justify-content: space-between;
     padding: 2% 5%;
     align-items: center;
+}
+
+header > img{
+    display: none;
 }
 
 nav > ul > li{
@@ -148,8 +154,8 @@ header > h1{
 #basic-gym-info > ul{
     position: relative;
     top: -150px;
-    left: 5%;
     width: fit-content;
+    margin-left: 5%;
 }
 
 
@@ -166,7 +172,7 @@ header > h1{
 
 
 #basic-gym-info p{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 #basic-gym-info h1{
@@ -195,7 +201,7 @@ header > h1{
 
 #just-train{
     background-color: var(--cinza-fraco);
-    padding-left: 5%;
+    padding: 0% 5%;
     padding-bottom: 5%;
 }
 #just-train > div{
@@ -240,7 +246,9 @@ header > h1{
 #luxury-sport-club > *{
     margin-bottom: 20px;
 }
-
+#luxury-sport-club > h2{
+    font-size: 2.5em;
+}
 #luxury-sport-club > p{
     max-width: 700px;
     text-align: justify;
@@ -290,8 +298,84 @@ ol > li{
 
 #get-active p{
     color: var(--cinza);
+    text-align: justify;
 }
 #get-active ol > li > h1{
     font-size: 1.5em;
     text-transform: capitalize;
+}
+
+/* join-us */
+
+#join-us{
+    background-image: url("../../assets/imagens/surprised-woman-1200.jpg.JPG");
+    padding: 0% 5%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#join-us > form{
+    color: white;
+    width: fit-content;
+
+}
+
+form > h1{
+    font-size: 5em;
+}
+
+form > p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    text-align: center;
+    height: 40px;
+}
+
+input[type="submit"]{
+    background-color: lightblue;
+}
+
+/* responsividade */
+
+@media (max-width: 700px){
+    header > img{
+        display: block;
+    }
+    header > nav{
+        display: none;
+    }
+
+    #just-train > ul{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content max-content;
+    }
+    div[class="image-grid"]{
+        display: block;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #get-active{
+        display: block;
+    }
+
+    #get-active > div {
+        margin-bottom: 40px;
+    }
+    
 }
