@@ -14,6 +14,20 @@
     padding: 0px;
 }
 
+.mostrar_menu{
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 3px;
+    background-color: white;
+}
+
+.mostrar_menu > li{
+    display: block;
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
 .squared-btn{
     padding: 15px 40px;
     width: fit-content;
@@ -355,7 +369,7 @@ input[type="submit"]{
     header > img{
         display: block;
     }
-    header > nav{
+    header > nav > ul{
         display: none;
     }
 
